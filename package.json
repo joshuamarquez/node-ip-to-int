@@ -1,6 +1,6 @@
 {
   "name": "ipv4-to-int",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "IPv4 to Integer Parser",
   "main": "index.js",
   "scripts": {
