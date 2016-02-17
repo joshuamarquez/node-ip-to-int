@@ -46,3 +46,7 @@ module.exports = (function() {
 
   }
 })();
+
+/*
+    Reference http://www.aboutmyip.com/AboutMyXApp/IP2Integer.jsp
+ */
