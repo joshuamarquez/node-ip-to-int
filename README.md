@@ -11,7 +11,7 @@ npm install ipv4-to-int --save
 ```javascript
 var ipToInt = require('ipv4-to-int');
 
-console.log(ipToInt('YOU_IP_ADDRESS'));
+console.log(ipToInt('YOUR_IP_ADDRESS'));
 
 // Example
 console.log(ipToInt('89.150.79.17')); // 1503022865
