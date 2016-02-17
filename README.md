@@ -2,7 +2,9 @@
 
 ## Install
 
-```npm install ipv4-to-int --save```
+```
+npm install ipv4-to-int --save
+```
 
 ## Usage
 
