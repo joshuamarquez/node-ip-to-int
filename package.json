@@ -1,0 +1,22 @@
+{
+  "name": "ipv4-to-int",
+  "version": "0.0.1",
+  "description": "IPv4 to Integer Parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ipv4",
+    "ip",
+    "integer",
+    "int",
+    "parser"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joshuamarquez/ipv4-to-int.git"
+  },
+  "author": "Joshua Marquez <joshua.marquezn@gmail.com>",
+  "license": "MIT"
+}
