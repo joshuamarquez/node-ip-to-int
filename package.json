@@ -1,10 +1,13 @@
 {
   "name": "ipv4-to-int",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "IPv4 to Integer Parser",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "keywords": [
     "ipv4",
