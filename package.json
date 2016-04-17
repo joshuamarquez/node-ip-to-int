@@ -1,6 +1,6 @@
 {
   "name": "ipv4-to-int",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "IP to Integer parser and vice versa",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "ip",
     "integer",
     "int",
-    "decimal"
+    "decimal",
     "parser"
   ],
   "repository": {
