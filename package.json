@@ -1,6 +1,6 @@
 {
   "name": "ip-to-int",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "IP to Integer converter for Node.js",
   "main": "index.js",
   "scripts": {
