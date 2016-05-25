@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/joshuamarquez/ip-to-int.git"
+    "url": "git://github.com/joshuamarquez/node-ip-to-int.git"
   },
   "author": "Joshua Marquez <joshua.marquezn@gmail.com>",
   "license": "MIT"
