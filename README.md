@@ -1,15 +1,15 @@
-# ipv4-to-int
+# ip-to-int
 
 ## Install
 
 ```
-npm install ipv4-to-int --save
+npm install ip-to-int --save
 ```
 
 ## Usage
 
 ```javascript
-const ipInt = require('ipv4-to-int');
+const ipInt = require('ip-to-int');
 
 // IP to Integer
 ipInt('89.150.79.17').toInt(); // 1503022865
