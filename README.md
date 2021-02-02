@@ -3,7 +3,7 @@
 ## Install
 
 ```
-npm install ip-to-int --save
+npm install ip-to-int
 ```
 
 ## Usage
@@ -16,6 +16,14 @@ ipInt('89.150.79.17').toInt(); // 1503022865
 
 // Integer to IP
 ipInt('1503022865').toIP(); // 89.150.79.17
+
+// IPv4 to Arpa
+ipInt('89.150.79.17').toArpa(); // 17.79.150.89.in-addr.arpa
+
+// Integer to Arpa
+ipInt('1503022865').toArpa(); // 17.79.150.89.in-addr.arpa
+
+
 ```
 
 ## Reference
