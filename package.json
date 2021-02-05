@@ -1,10 +1,10 @@
 {
   "name": "ip-to-int",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "IP to Integer converter for Node.js",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/*.js"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -15,12 +15,19 @@
     "integer",
     "int",
     "decimal",
-    "converter"
+    "converter",
+    "arpa"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/joshuamarquez/node-ip-to-int.git"
   },
   "author": "Joshua Marquez <joshua.marquezn@gmail.com>",
-  "license": "MIT"
+  "contributors": [
+    "Eviltik <eviltik@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^5.1.1"
+  }
 }

@@ -75,9 +75,34 @@ function toIP(value) {
   ].join('.');
 }
 
+/**
+ * Transform an IPv4 or Interger value into an Arpa addr
+ *
+ * @param  {String} value [value to parse]
+ * @return {String}       [Arpa String of value provided]
+ */
+function toArpa(value) {
+
+  if (!value) {
+    throw new Error('E_UNDEFINED_VALUE');
+  }
+
+  if (!regexIP.test(value)) {
+    value = toIP(value);
+  }
+
+  return value
+    .split('.')
+    .reverse()
+    .join('.')+'.in-addr.arpa';
+}
+
+
+
 module.exports = function ipInt(value) {
   return {
     toInt: () => toInt(value),
-    toIP: () => toIP(value)
+    toIP: () => toIP(value),
+    toArpa: () => toArpa(value)
   };
 };
