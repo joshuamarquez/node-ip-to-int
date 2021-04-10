@@ -1,13 +1,11 @@
-'use strict';
-
-const regexIP = /\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/;
+const regexIP: RegExp = /\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/;
 
 /**
  * Parses IPv4 to Integer
  * @param  {String}   ip  [valid IPv4 string]
  * @return {Integer}      [Integer value of IPv4 provided]
  */
-function toInt(ip) {
+function toInt(ip: string): number {
 
   if (!ip) {
     throw new Error('E_UNDEFINED_IP');
@@ -53,7 +51,7 @@ function toInt(ip) {
  * @param  {String} value [value to parse]
  * @return {String}       [IPv4 String of value provided]
  */
-function toIP(value) {
+function toIP(value: string) {
 
   if (!value) {
     throw new Error('E_UNDEFINED_INTEGER');
@@ -65,17 +63,22 @@ function toIP(value) {
     throw new Error('E_INTEGER_NOT_FOUND');
   }
 
-  value = result[0];
+  const intValue: number = Number(result[0]);
 
   return [
-    (value>>24)&0xff,
-    (value>>16)&0xff,
-    (value>>8)&0xff,
-    value&0xff
+    (intValue >> 24) & 0xff,
+    (intValue >> 16) & 0xff,
+    (intValue >> 8) & 0xff,
+    intValue & 0xff
   ].join('.');
 }
 
-module.exports = function ipInt(value) {
+export interface NodeIPInt {
+  toInt: () => number;
+  toIP: () => string;
+}
+
+module.exports = function ipInt(value: string): NodeIPInt {
   return {
     toInt: () => toInt(value),
     toIP: () => toIP(value)
