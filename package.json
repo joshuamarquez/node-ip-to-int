@@ -1,10 +1,14 @@
 {
   "name": "ip-to-int",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "IP to Integer converter for Node.js",
   "main": "index.js",
+  "source": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepare": "yarn build"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -21,6 +25,24 @@
     "type": "git",
     "url": "git://github.com/joshuamarquez/node-ip-to-int.git"
   },
+  "maintainers": [
+    {
+      "name": "thanhtunguet",
+      "email": "ht@thanhtunguet.info",
+      "url": "https://github.com/thanhtunguet"
+    }
+  ],
   "author": "Joshua Marquez <joshua.marquezn@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.4"
+  }
 }

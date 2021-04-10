@@ -1,9 +1,0 @@
-{
-  "esversion": 6,
-
-  "-W097": false,
-
-  "globals": {
-    "module": true
-  }
-}
